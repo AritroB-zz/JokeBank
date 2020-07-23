@@ -10,7 +10,7 @@ import UIKit
 
 class JokeTableViewController: UITableViewController {
     
-    var jokes = ["Chicken", "Walk into a bar...", "Knock Knock", "Life Melons", "Fish Tanks"]
+    var jokes = ["Chicken", "Walk into a bar...", "Olives", "Knock Knock", "Life Melons", "Fish Tanks"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,15 +36,18 @@ class JokeTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
        
-        let joke = jokes[indexPath.row]
+        let selectedJoke = jokes[indexPath.row]
         
-        performSegue(withIdentifier: "moveToJokeDefinition", sender: joke)
+        performSegue(withIdentifier: "moveToJokeDefinition", sender: selectedJoke)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let jokeVC = segue.destination as?
             JokeDefinitionViewController{
-            jokeVC.joke = "Hello!"
+            
+            if let selectedJoke = sender as? String {
+                jokeVC.joke = selectedJoke
+            }
         }
     }
 }
