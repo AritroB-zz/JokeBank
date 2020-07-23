@@ -10,7 +10,7 @@ import UIKit
 
 class JokeTableViewController: UITableViewController {
     
-    var jokes = ["Chicken", "Walk into a bar...", "Olives", "Knock Knock", "Life Melons", "Fish Tanks"]
+    var jokes = ["Walk into a bar...", "Unfunny Joke", "Atheism", "Life Melons", "Fish Tanks"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

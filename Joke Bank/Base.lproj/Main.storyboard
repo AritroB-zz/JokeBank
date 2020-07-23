@@ -66,14 +66,31 @@
                     <view key="view" contentMode="scaleToFill" id="nd1-l8-AKg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5W-Aw-arp">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="I5W-Aw-arp" firstAttribute="leading" secondItem="ww2-iF-adG" secondAttribute="leading" id="Exc-rv-z90"/>
+                            <constraint firstItem="ww2-iF-adG" firstAttribute="trailing" secondItem="I5W-Aw-arp" secondAttribute="trailing" id="oML-N8-pJX"/>
+                            <constraint firstItem="I5W-Aw-arp" firstAttribute="top" secondItem="ww2-iF-adG" secondAttribute="top" id="qBG-Do-df5"/>
+                            <constraint firstItem="ww2-iF-adG" firstAttribute="bottom" secondItem="I5W-Aw-arp" secondAttribute="bottom" id="rjy-KA-x0D"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ww2-iF-adG"/>
                     </view>
                     <navigationItem key="navigationItem" id="lSb-PN-7rA"/>
+                    <connections>
+                        <outlet property="jokeLabel" destination="I5W-Aw-arp" id="cqL-Hf-svB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DO4-kV-ouy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1937" y="130"/>
+            <point key="canvasLocation" x="1936.8" y="129.98500749625188"/>
         </scene>
     </scenes>
 </document>
