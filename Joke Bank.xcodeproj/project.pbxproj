@@ -13,6 +13,7 @@
 		4D68534524C12F4400D7D49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D68534424C12F4400D7D49F /* Assets.xcassets */; };
 		4D68534824C12F4400D7D49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D68534624C12F4400D7D49F /* LaunchScreen.storyboard */; };
 		4D68535024C1308F00D7D49F /* JokeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D68534F24C1308F00D7D49F /* JokeTableViewController.swift */; };
+		4D77B79324C9123A00E82317 /* JokeDefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D77B79224C9123A00E82317 /* JokeDefinitionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4D68534724C12F4400D7D49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D68534924C12F4400D7D49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D68534F24C1308F00D7D49F /* JokeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeTableViewController.swift; sourceTree = "<group>"; };
+		4D77B79224C9123A00E82317 /* JokeDefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDefinitionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				4D68533B24C12F4300D7D49F /* AppDelegate.swift */,
 				4D68533D24C12F4300D7D49F /* SceneDelegate.swift */,
 				4D68534F24C1308F00D7D49F /* JokeTableViewController.swift */,
+				4D77B79224C9123A00E82317 /* JokeDefinitionViewController.swift */,
 				4D68534124C12F4300D7D49F /* Main.storyboard */,
 				4D68534424C12F4400D7D49F /* Assets.xcassets */,
 				4D68534624C12F4400D7D49F /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				4D68533C24C12F4300D7D49F /* AppDelegate.swift in Sources */,
 				4D68533E24C12F4300D7D49F /* SceneDelegate.swift in Sources */,
+				4D77B79324C9123A00E82317 /* JokeDefinitionViewController.swift in Sources */,
 				4D68535024C1308F00D7D49F /* JokeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

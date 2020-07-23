@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O7a-gD-OYI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rJ6-eN-s09">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Joke Table View Controller-->
+        <!--Joke Bank 😂-->
         <scene sceneID="7bH-qi-3iX">
             <objects>
                 <tableViewController id="O7a-gD-OYI" customClass="JokeTableViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,10 +30,50 @@
                             <outlet property="delegate" destination="O7a-gD-OYI" id="P7W-QB-sYc"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Joke Bank 😂" id="BFW-GT-Ayn">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="nKb-zt-ZIV"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="lK1-8f-1Bj" kind="show" identifier="moveToJokeDefinition" id="uD8-JS-hZd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1SC-F6-LOC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148" y="130"/>
+            <point key="canvasLocation" x="1087.2" y="129.98500749625188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p8P-Fn-q5f">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rJ6-eN-s09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rCO-XB-TAd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O7a-gD-OYI" kind="relationship" relationship="rootViewController" id="orz-Tw-yiz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2u-dX-OJm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="148" y="129.98500749625188"/>
+        </scene>
+        <!--Joke Definition View Controller-->
+        <scene sceneID="R2Q-3a-iFa">
+            <objects>
+                <viewController id="lK1-8f-1Bj" customClass="JokeDefinitionViewController" customModule="Joke_Bank" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nd1-l8-AKg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ww2-iF-adG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lSb-PN-7rA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO4-kV-ouy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1937" y="130"/>
         </scene>
     </scenes>
 </document>
